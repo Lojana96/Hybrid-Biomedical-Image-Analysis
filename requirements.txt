@@ -1,0 +1,18 @@
+# Numerical computing and data handling
+numpy
+pandas
+
+# Visualisation
+matplotlib
+
+# Image loading and processing
+Pillow
+imageio
+scikit-image
+scipy
+
+# Deep learning
+torch
+
+# Local LLM/VLM Python client
+ollama

@@ -1,0 +1,4 @@
+loss_function,final_train_loss,final_val_loss,final_val_dice,final_val_iou,peak_val_dice,peak_val_iou,peak_epoch
+Combined (BCE + Dice),0.7187,0.782,0.9901,0.9804,0.9902,0.9807,13
+BCE Only,0.1824,0.1861,0.9934,0.9869,0.9938,0.9877,13
+Soft Dice Only,0.478,0.6479,0.9673,0.9373,0.9738,0.949,13

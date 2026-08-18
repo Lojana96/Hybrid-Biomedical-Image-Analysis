@@ -1,0 +1,35 @@
+image_id,mean_intensity,intensity_std,intensity_range,measured_n_objects,llm_n_objects,audit_count_match,json_valid,mean_area,total_area,area_fraction,density_class,shape_regularity,quality_gate,quality_reason,llm_quality_flag,quality_flag,rationale,summary_narrative,dice_vs_gt,connected_component_count,segmented_object_count
+test_000,0.0177,0.035,0.3468,8,8,True,True,193.75,1550.0,0.0237,sparse,regular,pass,Image passed deterministic quality checks.,pass,pass,"The image contains 8 distinct nuclei with regular elliptical shapes, occupying a small percentage of the field, and having a low mean pixel intensity, indicating a sparse density.","The microscopy image contains 8 distinct cellular nuclei, occupying a total area of 1550 pixels, which accounts for 2.37% of the field coverage. The individual nucleus area averages 193.8 pixels, with a range of 59-430 pixels. The nuclei exhibit predominantly regular elliptical shapes, as indicated by a mean eccentricity of 0.638 and a mean solidity of 0.971. The mean foreground pixel intensity is 0.226, and the density is classified as sparse.
+
+{
+    ""n_objects"": 8,
+    ""density_class"": ""sparse"",
+    ""shape_regularity"": ""regular"",
+    ""quality_flag"": ""pass"",
+    ""rationale"": ""The image contains 8 distinct nuclei with regular elliptical shapes, occupying a small percentage of the field, and having a low mean pixel intensity, indicating a sparse density.""",,8,8
+test_000_blur,0.0159,0.0196,0.1836,7,7,True,True,366.14,2563.0,0.0391,sparse,regular,pass,Image passed deterministic quality checks.,pass,pass,"The image contains 7 distinct nuclei with regular elliptical shapes, occupying a small percentage of the field, and having a low mean foreground pixel intensity, consistent with a sparse density.","The microscopy image contains 7 distinct cellular nuclei, occupying a total area of 2563 pixels, which accounts for 3.91% of the field coverage. The individual nucleus area averages 366.1 pixels, with a range of 104-794 pixels. The nuclei exhibit regular elliptical shapes, as indicated by a mean eccentricity of 0.463 and a mean solidity of 0.958. The mean foreground pixel intensity is 0.091, and the density is classified as sparse.
+
+{
+    ""n_objects"": 7,
+    ""density_class"": ""sparse"",
+    ""shape_regularity"": ""regular"",
+    ""quality_flag"": ""pass"",
+    ""rationale"": ""The image contains 7 distinct nuclei with regular elliptical shapes, occupying a small percentage of the field, and having a low mean foreground pixel intensity, consistent with a sparse density.""",,7,7
+test_000_lowcontrast,0.4256,0.0053,0.0505,1,1,False,False,65536.0,65536.0,1.0,sparse,regular,reject,Foreground coverage exceeds 75% (threshold collapse/canvas saturation).,rejected_pre_llm,reject,Pre-LLM Quality Gate Rejected: Foreground coverage exceeds 75% (threshold collapse/canvas saturation).,REJECTED PRE-LLM: Foreground coverage exceeds 75% (threshold collapse/canvas saturation).,,1,1
+test_004,0.0666,0.1044,0.3468,42,42,True,True,340.6,14305.0,0.2183,clustered,moderate,pass,Image passed deterministic quality checks.,pass,pass,"The image contains 42 distinct nuclei with moderate elliptical shapes, a low mean foreground pixel intensity, and a clustered density, indicating a moderate level of shape regularity and a high density.","The microscopy image contains 42 distinct cellular nuclei, occupying a total area of 14305 pixels, which accounts for 21.83% of the field coverage. The individual nucleus area averages 340.6 pixels, with a range of 64-1345 pixels. The nuclei exhibit moderate elliptical shapes, as indicated by a mean eccentricity of 0.659 and a mean solidity of 0.929. The mean foreground pixel intensity is 0.252, suggesting a relatively low intensity. The density of the nuclei is classified as clustered.
+
+{
+    ""n_objects"": 42,
+    ""density_class"": ""clustered"",
+    ""shape_regularity"": ""moderate"",
+    ""quality_flag"": ""pass"",
+    ""rationale"": ""The image contains 42 distinct nuclei with moderate elliptical shapes, a low mean foreground pixel intensity, and a clustered density, indicating a moderate level of shape regularity and a high density.""",,42,42
+test_004_blur,0.0643,0.0622,0.2847,15,15,True,True,1638.93,24584.0,0.3751,normal,moderate,pass,Image passed deterministic quality checks.,pass,pass,"The image contains 15 distinct nuclei with moderate elliptical shapes, occupying a significant portion of the field. The normal density and moderate shape regularity suggest a typical cellular morphology.","The microscopy image contains 15 distinct cellular nuclei, occupying a total area of 24584 pixels, which accounts for 37.51% of the field coverage. The individual nucleus area averages 1638.9 pixels, with a range of 60-8413 pixels. The nuclei exhibit moderate elliptical shapes, as indicated by a mean eccentricity of 0.692 and a mean solidity of 0.872. The mean foreground pixel intensity is 0.111, and the density is classified as normal.
+
+{
+    ""n_objects"": 15,
+    ""density_class"": ""normal"",
+    ""shape_regularity"": ""moderate"",
+    ""quality_flag"": ""pass"",
+    ""rationale"": ""The image contains 15 distinct nuclei with moderate elliptical shapes, occupying a significant portion of the field. The normal density and moderate shape regularity suggest a typical cellular morphology.""",,15,15
+test_004_lowcontrast,0.433,0.0156,0.0505,1,1,False,False,65536.0,65536.0,1.0,sparse,regular,reject,Foreground coverage exceeds 75% (threshold collapse/canvas saturation).,rejected_pre_llm,reject,Pre-LLM Quality Gate Rejected: Foreground coverage exceeds 75% (threshold collapse/canvas saturation).,REJECTED PRE-LLM: Foreground coverage exceeds 75% (threshold collapse/canvas saturation).,,1,1
